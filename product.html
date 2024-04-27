@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrivals | InterDior</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.0/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <input type="checkbox" name="bars" id="bars">
+        <div class="site-logo">
+            <a href="#" class="logo-link">
+                <img src="logo.gif" alt="InterDior Logo">
+                <span>InterDior</span>
+            </a>
+        </div>
+        <ul class="navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#arrival" class="active">New Arrival</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="sitemap.html" target="_blank">Sitemap</a></li>
+            <label for="bars" class="close">
+                <i class="fa fa-close"></i>
+            </label>
+        </ul>
+        <label for="bars" class="bars">
+            <i class="fa fa-bars"></i>
+        </label>
+    </header>
+
+    <section class="arrival" id="arrival">
+        <div class="container">
+            <div class="heading">
+                <h2 class="title">New Arrivals</h2>
+                <p class="subtitle">Discover the latest and greatest in design.</p>
+            </div>
+            <div class="items">
+                <!-- Insert dynamic content here -->
+                <!-- Example for a single item -->
+                <div class="item">
+                    <img src="new-item-1.jpg" alt="New Designer Sofa">
+                    <div class="details">
+                        <h3>New Designer Sofa</h3>
+                        <a class="link">
+                            <span>Furniture</span> / Comfort
+                        </a>
+                        <a href="#shop" class="btn-shop">Shop Now</a>
+                    </div>
+                </div>
+                <!-- Repeat similar block for each new arrival -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Other sections of the website -->
+    <!-- Footer remains the same as your current index to maintain consistency -->
+
+    <footer class="footer">
+        <!-- Footer content -->
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.0/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            autoplay: true,
+            speed: 600,
+            loop: true,
+            breakpoints: {
+                350: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                750: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                950: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+            }
+        });
+    </script>
+</body>
+</html>
