@@ -1,0 +1,21 @@
+/* Flexbox layout for .container to display images side by side */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items on the line */
+}
+
+.container img {
+    width: 20%; /* Sets the width of each image to 20% of the container's width */
+    margin: 5px; /* Adds spacing between images */
+}
+
+/* Existing CSS rules from inspirationalgallry.css */
+/* You may adjust the below properties as necessary to suit your design */
+.image {
+    border: 1px solid #000; /* Example: Adds a black border around each image */
+    padding: 10px; /* Example: Adds padding inside each image container */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5); /* Example: Adds shadow effect to each image */
+}
+
+/* Additional styles and rules from your CSS file can follow here */
