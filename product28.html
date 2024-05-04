@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deluxe Comfort Bed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* A cool, light blue background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 50%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-top: 70px; /* Adjust margin to avoid overlap with fixed header */
+        }
+        .header {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .description {
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .top-nav {
+            width: 100%;
+            background-color: #000; /* Stylish black for the navigation bar */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed; /* Makes the navigation bar fixed at the top */
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .top-nav .logo {
+            display: flex;
+            align-items: center;
+        }
+        .top-nav .logo img {
+            height: 40px; /* Adjust logo size as needed */
+            margin-right: 10px; /* Add spacing between logo and title */
+        }
+        .top-nav .navigation {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .top-nav .navigation li {
+            margin-right: 15px;
+        }
+        .top-nav .navigation li:last-child {
+            margin-right: 0;
+        }
+        .top-nav .navigation li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .top-nav .navigation li a:hover {
+            text-decoration: underline;
+        }
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pagination a {
+            display: inline-block;
+            padding: 8px 12px;
+            margin-right: 10px;
+            background-color: #f4f4f4;
+            color: black;
+            border: 1px solid #ddd;
+            text-decoration: none;
+        }
+        .pagination a.active {
+            background-color: #007bff;
+            color: white;
+            border: 1px solid #007bff;
+        }
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <div class="logo">
+            <img src="logo.gif" alt="InterDior Logo">
+            <span>InterDior</span>
+        </div>
+        <ul class="navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products" class="active">Products</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#sitemap">Sitemap</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="product-image">
+            <img src="product-1.jpg" alt="Deluxe Comfort Bed">
+        </div>
+        <h1 class="header">Deluxe Comfort Bed</h1>
+        <div class="description">
+            <p><strong>Luxurious Design:</strong> Featuring a sleek and modern design...</p>
+            <p><strong>Superior Comfort:</strong> Sink into blissful comfort...</p>
+            <p><strong>Durable Construction:</strong> Built to last...</p>
+            <p><strong>Customizable Options:</strong> Personalize your sleeping experience...</p>
+            <p><strong>Easy Assembly:</strong> Setting up your new bed...</p>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | InterDior</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.0/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .item img {
+            width: 100%; /* Makes image fully occupy the container */
+            aspect-ratio: 1 / 1; /* Ensures the image is always square */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+            .pagination a {
+    display: inline-block; /* Ensures each link is treated as a block, but flows inline */
+    padding: 8px 12px; /* Adds space inside each link */
+    margin-right: 10px; /* Adds space between links */
+    background-color: #f4f4f4; /* Background color for each link */
+    color: black; /* Text color for each link */
+    border: 1px solid #ddd; /* Border for each link */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.pagination a.active {
+    background-color: #007bff; /* Background color for the active link */
+    color: white; /* Text color for the active link */
+    border: 1px solid #007bff; /* Border for the active link */
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd; /* Background color for links on hover, except for the active link */
+}
+
+.pagination {
+    white-space: nowrap; /* Prevents the pagination links from wrapping onto the next line */
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <input type="checkbox" name="bars" id="bars">
+        <div class="site-logo">
+            <a href="#" class="logo-link">
+                <img src="logo.gif" alt="InterDior Logo">
+                <span>InterDior</span>
+            </a>
+        </div>
+        <ul class="navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product.html" class="active">Products</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#product">products</a></li>
+            <li><a href="sitemap.html" target="_blank">Sitemap</a></li>
+            <label for="bars" class "close">
+                <i class="fa fa-close"></i>
+            </label>
+        </ul>
+        <label for="bars" class="bars">
+            <i class="fa fa-bars"></i>
+        </label>
+    </header>
+
+    <section class="arrival" id="arrival">
+        <div class="container">
+            <div class="heading">
+                <h2 class="title">Products</h2>
+                <p class="subtitle">Discover the latest and greatest in design.</p>
+            </div>
+            <div class="items">
+                
+                <div class="item">
+                    <img src="product-21.jpg" alt="Product 1">
+                    <div class="details">
+                        <h3>Product 1</h3>
+                        <p class="description">Explore the unique features of Product 1, designed for both style and comfort.</p>
+                        <a class="link">
+                            <span>Category</span> / Subcategory
+                        </a>
+                        <a href="#shop" class="btn-shop">Shop Now</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="product-22.jpg" alt="Product 1">
+                    <div class="details">
+                        <h3>Product 2</h3>
+                        <p class="description">Explore the unique features of Product 1, designed for both style and comfort.</p>
+                        <a class="link">
+                            <span>Category</span> / Subcategory
+                        </a>
+                        <a href="#shop" class="btn-shop">Shop Now</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="product-23.jpg" alt="Product 1">
+                    <div class="details">
+                        <h3>Product 3</h3>
+                        <p class="description">Explore the unique features of Product 1, designed for both style and comfort.</p>
+                        <a class="link">
+                            <span>Category</span> / Subcategory
+                        </a>
+                        <a href="#shop" class="btn-shop">Shop Now</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="product-24.jpg" alt="Product 1">
+                    <div class="details">
+                        <h3>Product 4</h3>
+                        <p class="description">Explore the unique features of Product 1, designed for both style and comfort.</p>
+                        <a class="link">
+                            <span>Category</span> / Subcategory
+                        </a>
+                        <a href="#shop" class="btn-shop">Shop Now</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="product-25.jpg" alt="Product 1">
+                    <div class="details">
+                        <h3>Product 5</h3>
+                        <p class="description">Explore the unique features of Product 1, designed for both style and comfort.</p>
+                        <a class="link">
+                            <span>Category</span> / Subcategory
+                        </a>
+                        <a href="#shop" class="btn-shop">Shop Now</a>
+                    </div>
+                </div>
+                
+                <!-- Include more products as per pagination -->
+                <div class="pagination">
+                    <a href="productpage1.html">1</a>  <!-- Ensure this is present -->
+                    <a href="productpage2.html">2</a>  <!-- Ensure this is present -->
+                    <a href="productpage3.html">3</a>
+                    <a href="productpage4.html">4</a>
+                    <a href="productpage5.html">5</a>
+                    <a href="productpage6.html">6</a>
+                    
+                    <a href="productpage6.html">Next</a>
+                </div>
+                
+                
+    </section>
+
+    <footer class="footer">
+        <!-- Footer content -->
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.0/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3
+            </script>
