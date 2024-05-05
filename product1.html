@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e0f7fa; /* Cool, light blue background */
+            background-color: #e0f7fa; /* A cool, light blue background color */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,9 +20,9 @@
             width: 50%;
             background-color: #fff;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             text-align: center;
-            margin-top: 70px; /* Ensures no overlap with fixed header */
+            margin-top: 400px; /* Adjust margin to create a gap */
         }
         .header {
             font-size: 28px;
@@ -30,23 +30,28 @@
             margin-bottom: 20px;
         }
         .product-image img {
-            max-width: 100%;
+            width: 50%; /* Medium size */
             height: auto;
         }
+        .product-details ul {
+          text-align: justify; /* Align text to the left */
+          padding-left: 20px; /* Add some padding to the left of the list */
+        }
         .description {
-            text-align: justify;
-            font-size: 16px; /* Adjusted for better readability */
+            text-align: justify; /* Justify the text */
+            font-size: 16px;
             line-height: 1.6;
+            margin-top: 20px; /* Add some space between the header and the description */
         }
         .top-nav {
             width: 100%;
-            background-color: #000; /* Stylish black navbar */
+            background-color: #000; /* Stylish black for the navigation bar */
             color: white;
             padding: 10px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: fixed;
+            position: fixed; /* Makes the navigation bar fixed at the top */
             top: 0;
             left: 0;
             z-index: 1000;
@@ -56,8 +61,8 @@
             align-items: center;
         }
         .top-nav .logo img {
-            height: 40px;
-            margin-right: 10px;
+            height: 40px; /* Adjust logo size as needed */
+            margin-right: 10px; /* Add spacing between logo and title */
         }
         .top-nav .navigation {
             list-style: none;
@@ -101,7 +106,6 @@
             background-color: #ddd;
         }
     </style>
-    
 </head>
 <body>
     <div class="top-nav">
@@ -139,13 +143,14 @@
             </ul>
         
             <h3>Pricing</h3>
-            <ul>
-                <li><strong>Queen Size:</strong> Typically priced around $800 - $1,200, depending on the retailer and specific design features.</li>
+            <ul style="padding-left: 0; list-style-position: inside; text-align: left;">
+                <li><strong>Queen Size:</strong> Priced around $800 - $1,200, depending on the retailer and specific design features.</li>
                 <li><strong>Variability:</strong> Price may vary based on size and wood type selected.</li>
                 <li><strong>Additional Costs:</strong> Shipping and handling fees may apply, and prices may be higher if purchasing from specialty or boutique stores.</li>
             </ul>
-        </div>
-        
 
+            
+        </div>
+    </div>
 </body>
 </html>

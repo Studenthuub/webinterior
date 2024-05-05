@@ -22,7 +22,7 @@
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             text-align: center;
-            margin-top: 70px; /* Adjust margin to avoid overlap with fixed header */
+            margin-top: 630px; /* Adjust margin to avoid overlap with fixed header */
         }
         .header {
             font-size: 28px;
@@ -30,13 +30,18 @@
             margin-bottom: 20px;
         }
         .product-image img {
-            max-width: 100%;
+            width: 50%; /* Medium size */
             height: auto;
         }
+        .product-details ul {
+          text-align: left; /* Align text to the left */
+          padding-left: 30px; /* Add some padding to the left of the list */
+        }
         .description {
-            text-align: left;
+            text-align: justify; /* Make description text justified */
             font-size: 16px;
             line-height: 1.6;
+            margin-top: 20px; /* Add some space between the header and the description */
         }
         .top-nav {
             width: 100%;
@@ -122,25 +127,28 @@
             <img src="product-29.jpg" alt="Deluxe Comfort Bed">
         </div>
         <h1 class="header">Deluxe Comfort Bed</h1>
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Artistic Vase Display</title>
-        </head>
-        <body>
-            <h1>Product Listing</h1>
-            <div>
-                <h2>Name: Artistic Ceramic Vase with Branches</h2>
-                <ul>
-                    <li>Materials: Ceramic vase with a matte gray finish, natural branches</li>
-                    <li>Features: Modern two-tiered bulbous design, paired with wild natural branches for a stark, artistic contrast</li>
-                    <li>Pricing: $65.00</li>
-                </ul>
-            </div>
-        </body>
-        </html>
+        <div class="product-details">
+            <h3>What is Used to Make It</h3>
+            <ul>
+                <li><strong>Frame Material:</strong> Solid hardwood, commonly teak or oak, known for its durability and natural beauty.</li>
+                <li><strong>Slats:</strong> Strong wooden slats that provide excellent mattress support without the need for a box spring.</li>
+                <li><strong>Finish:</strong> A clear varnish that enhances the natural wood grain and provides protection against wear and stains.</li>
+            </ul>
         
+            <h3>Its Features</h3>
+            <ul>
+                <li><strong>Design:</strong> Timeless slatted headboard design that complements a wide range of bedroom decors.</li>
+                <li><strong>Durability:</strong> Built to last, with materials chosen for strength and longevity.</li>
+                <li><strong>Size:</strong> Available in multiple sizes including twin, full, queen, and king to accommodate various room dimensions and user needs.</li>
+            </ul>
+        
+            <h3>Pricing</h3>
+            <ul style="padding-left: 0; list-style-position: inside; text-align: left;">
+                <li><strong>Queen Size:</strong> Priced around $800 - $1,200, depending on the retailer and specific design features.</li>
+                <li><strong>Variability:</strong> Price may vary based on size and wood type selected.</li>
+                <li><strong>Additional Costs:</strong> Shipping and handling fees may apply, and prices may be higher if purchasing from specialty or boutique stores.</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
